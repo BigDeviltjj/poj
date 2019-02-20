@@ -11,3 +11,8 @@ following solutions are lost:
 #### some algorithms and problems
 
 - line segment tree: [total area and perimeter of overlaped rectangles](https://blog.csdn.net/tomorrowtodie/article/details/52048323)
+
+#### some tips
+
+add ```#define _CRT_SECURE_NO_WARNINGS``` to prevent warning of scanf in visual studio
+
