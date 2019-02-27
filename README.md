@@ -16,3 +16,5 @@ following solutions are lost:
 
 add ```#define _CRT_SECURE_NO_WARNINGS``` to prevent warning of scanf in visual studio
 
+a great oi website [oi-wiki](https://oi-wiki.org)
+
