@@ -126,9 +126,6 @@ void primeNum(int N)
 		}        
 	}        
 }
-
-
-
 int main() {
     vector<int> a{9, 2, 3, 5, 4, 10, 1, 7, 6, 8};
     qsort(a.begin(), a.end() - 1);
