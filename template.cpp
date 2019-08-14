@@ -126,6 +126,28 @@ void primeNum(int N)
 		}        
 	}        
 }
+/*-----------------------all permutate-----------------*/
+void permutate(vector<int>& a) {
+        int j = a.size() - 1;
+        while (j >= 1 && a[j-1] > a[j]) {
+                j--;
+        }
+        if (j == 0) {
+
+                for (int i = j; i < a.size() - 1 + j - i; ++i) {
+                        swap(a[i], a[a.size() - 1 + j - i]);
+                }
+                return;
+        }
+        int i = a.size();
+        while (a[--i] < a[j-1]);
+        swap(a[j-1], a[i]);
+        for (int i = j; i < a.size() - 1 + j - i; ++i) {
+                swap(a[i], a[a.size() - 1 + j - i]);
+        }
+        return;
+}
+
 int main() {
     vector<int> a{9, 2, 3, 5, 4, 10, 1, 7, 6, 8};
     qsort(a.begin(), a.end() - 1);
